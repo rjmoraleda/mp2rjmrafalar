@@ -1,0 +1,12 @@
+<div class="m-auto">
+    <div  class="TitleCon" style="margin-top: 50px;"><%= category %> PRODUCTS</div>
+    <div class="d-flex flex-wrap gap-1 justify-content-center mt-3">
+                <% products.forEach ( post =>{ %>
+                    <%- include('components/product', {product: post}) %>		
+                <% }); %>
+                    
+            </div>
+        
+        </div>
+       
+  

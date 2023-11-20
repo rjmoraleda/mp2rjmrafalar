@@ -1,0 +1,53 @@
+
+  <!-- Modal -->
+  <div class="modal fade logoutmodal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <p>Do you really want to Log out?</p>
+        
+          <button type="button" class="btn btn-secondary closeLogout" data-bs-dismiss="modal">Cancel</button>
+
+            <form  action="/logout" method="POST">
+                 <button type="submit" class="btn ConfirmLogoutBut">Confirm</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="TopContainer">
+              <div class="TopConInnerCon">
+                <div class="TopLeft">
+                    <div class="MenuCon"><a href="/"><div id="MenuName">Home</div></a></div>
+                    <div class="MenuCon"><a href="/products"><div id="MenuName">All Products</div></a></div>
+                    <div class="MenuCon"><div id="MenuName">Follow us on<a href="about.php"></a></a></div></div>
+                </div>
+                
+                <div class="TopRight">
+                <% if(userEmail){%>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">My Account</a>
+                        <ul class="dropdown-menu MyAccountDropDown">
+                          <li class="UserName"><%= locals.userEmail %></li>
+                          <li><a class="dropdown-item" href="/settings">Account Settings</a></li>
+                          <li><a class="dropdown-item" href="/del_address">Delivery Address</a></li>
+                          <li> 
+                            <button type="button" class="LogoutBut" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Log out
+                              </button>
+                              
+                          </li>
+                        </ul>
+                    </div>
+                 <% }else{%>
+                        <div class="LoginBut"><a href="/signup">Sign up</a></div>
+                        <div class="SignupBut"><a href="/login">Log in</a></div>
+               
+                    <% } %>
+                </div>
+            </div>  
+        </div>
+
+
+        

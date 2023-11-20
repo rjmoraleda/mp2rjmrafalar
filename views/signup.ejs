@@ -1,0 +1,75 @@
+<%- locals.SignUpAlert  %>
+
+<div class="modal " id="myModal">
+  <div class="modal-dialog ">
+    <div class="modal-content signUpModal">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Account successfully registered..</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Please Proceed to Log In Page!
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <form action="/login">
+            <button type="submit" class="btn btn-success" >LOG IN ACCOUNT HERE</button>
+        </form>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="SignupCon">
+
+    <div class="SignUpFormCon">
+        <div class="SignUpTitle">
+            <p>SIGN UP ACCOUNT</p>
+            <%- locals.alert %>
+        </div>
+        <form class="SignUpFormBox" action="/signup" method="POST">
+            <div class="form-outline mb-4 SignupInput">
+                <input type="text" name="FirstName" id="FirstName" class="form-control"
+                  placeholder="Enter First Name" required />
+               
+              </div>
+              
+              <div class="form-outline mb-4 SignupInput">
+                <input type="text" name="LastName" id="LastName" class="form-control"
+                    placeholder="Enter Last Name" required />
+                 
+                </div>
+
+
+                <div class="form-outline mb-4 SignupInput">
+                  <input type="Email" name="Email" id="Email" class="form-control"
+                    placeholder="Enter Email" required/>
+                 
+                </div>
+
+              <div class="form-outline mb-4 SignupInput">
+                <input type="password" name="password" id="Password" class="form-control" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+                 <p class="PasswordMustBe"><i>Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters</i></p>
+              </div>
+              <div class="form-outline mb-4 SignupInput">
+                <input type="password" name="RepeatPass" id="ConfirmPass" class="form-control" placeholder="Repeat Password" required/>
+              
+              </div>
+
+              <div class="text-center pt-1 mb-5 pb-1 SignupInput ">
+                <button class="col-sm-12 btn btn-primary SingUpBut " type="submit">SIGN UP</button>
+              </div>
+        </form>
+    </div>
+
+
+</div>

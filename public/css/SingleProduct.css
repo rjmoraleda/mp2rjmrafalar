@@ -1,0 +1,64 @@
+.ProductDetailsCon{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-top: 60px;
+}
+.ProductDetailsCarouselCon{
+    margin-right: 60px;
+    width: 550px;
+    height: 403px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+                rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.ProductInfoBox{
+    border: 1px solid lightgray;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 50px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+                rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.QuantityInput{
+    text-align: center;
+    margin-left: 15px;
+}
+.DetailsPrice{
+    margin-top: 10px !important;
+}
+
+.DetailsPrice i{
+    color: var(--red);
+    font-weight: bold;
+    margin-left: 10px;
+}
+.DetailsAddCartBut{
+    background-color: var(--red);
+    color: white;
+    border-radius: 0;
+    width: 100%;
+    align-self: center;
+    margin-top:20px;
+}   
+.DetailsBuyBut{
+    width: 100%;
+    background-color: #F4D35E; 
+    border-radius: 0;
+    align-self: center;
+}
+.DetailsAddCartBut:hover{
+    background-color: var(--red);
+    color: white;
+    scale: 0.98 ;
+}
+.DetailsBuyBut:hover{
+    background-color: #F4D35E; 
+    scale: 0.98 ;
+}
+.DetailsButtonsCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

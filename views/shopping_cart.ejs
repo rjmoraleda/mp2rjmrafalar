@@ -1,0 +1,10 @@
+
+        <div class="CartMainBox">
+            <div class="CartItemBox">
+                <%  if(cart.length > 0){ let total = 0; cart.forEach(item => {%>
+                    <div class="ProductImage">Product Name : <%= item.product_name %></div>
+                    <div class="ProductImage">Quantity : <%= item.quantity %></div><br><br>
+                    <%})
+                } %>
+            </div>
+        </div>

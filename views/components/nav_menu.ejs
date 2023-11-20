@@ -1,0 +1,45 @@
+
+
+
+
+
+      <div class="NavMenuMainBox">
+          <div id="carouselExampleControls" class="carousel  slide CarouselNavBox" data-ride="carousel" >
+                  <div class="carousel-inner NavMenuInnerBox">
+                    <div class="MenuCompressBox">
+                            <% let i = 0; 
+                            categories.forEach ( post =>{ 
+                                
+                              if(i === 0){%>    
+                                  <div class="carousel-item NavLinkBox active">
+                            <% }else if (i % 9 == 0){ %>
+                                    
+                                    </div>
+                                    <div class="carousel-item NavLinkBox ">
+
+                            <% }else{ %>
+                                    <div class="LinkBox">
+                                        <a class="NavLink" href="../category/<%= post  %>"><%= post%> </a>   
+                                    </div>
+                          <%}                      
+                            i++;
+                          }) %>
+
+                      </div>
+
+
+                  <button class="carousel-control-prev prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <div class="NavBut">&lt;</div>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <div class="NavBut" >&gt;</div>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+          </div>
+        </div>
+      </div>
+    </div>        
+                    
+                    
+              

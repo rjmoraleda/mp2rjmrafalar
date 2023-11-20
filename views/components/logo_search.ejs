@@ -1,0 +1,27 @@
+
+<div class="LogoSearchCartCon">
+    <div class="LogoSearchCartInnerCon">
+        <div class="LogoImg"><img src="/image/logo2.png" alt=""></div>
+        <div class="SearchCartBox">
+                <form class="SearchInputBox" action="/search" method="POST">
+                    <input class="form-control SearchInput" name="search"  placeholder="Search Product Here">
+                    <button type="submit" class="SearchBut" name="search">SEARCH</button>
+                </form>
+                <div class="CartNotif">
+                <button type="submit" class="CartNotifBut"><i class="bi bi-cart-fill"></i></button>
+                </div>
+                <div class="ListBut">
+
+                    <button type="button" class="CategBut btn btn-danger" data-bs-toggle="dropdown">
+                        <i class="bi bi-list"></i>
+                      </button>
+                        <div class="dropdown-menu DropdownCategory">
+                          <% categories.forEach ( post =>{ %>
+                            <a class="dropdown-item categoryMenu" href="../category/<%= post  %>"><%= post  %></a>
+                          <% }) %>
+                      </div>                                                                 
+                                                                                
+                </div>
+        </div>
+</div>
+</div>
