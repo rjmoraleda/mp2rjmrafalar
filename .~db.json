@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": 1694535380656,
+      "fName": "luffy",
+      "lName": "monkey",
+      "email": "monkeydluffy@gmail.com",
+      "password": "$2b$10$g7k/lTFqtYpdm.EFfmFd6u2oHwNyu8xrn2q.X94UtlI/bH4o2H9IO"
+    },
+    {
+      "id": 1694535447934,
+      "fName": "luffy",
+      "lName": "monkey",
+      "email": "dluffymonkey@gmail.com",
+      "password": "$2b$10$F0lj9a1Un1JK75xjJu9AZed0KJJapCAbdG7WlyWisIMgKSq/dp1pm"
+    },
+    {
+      "id": 1695396048814,
+      "fName": "demo",
+      "lName": "demo",
+      "email": "demo3@demo.com",
+      "password": "$2b$10$qWeN2YVKFQteLKYk9LyR7uHn1GfGvGXGV6XITpYaxX4RuX8hQFaVe"
+    }
+  ],
+  "carts": []
+}
