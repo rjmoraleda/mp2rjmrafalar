@@ -50,7 +50,7 @@
        
             <div>
                 <div style="display: flex; gap: 7px;">
-                    <p>&#8369; </p> 
+                    <p>&#x24; </p> 
                     <h2 id="price" style="margin: 0px;"><%= product.price %></h2>
                     <p style="margin: 0px;"><sup><%= product.discount %>% discount</sup></p>
                 </div>
@@ -70,8 +70,8 @@
                 <input type="hidden" id="productPrice" name="productPrice" value="<%= product.price %>">
                 <input type="hidden" id="productQty" name="productQty" value="1">
                 <input type="hidden" id="productTotal" name="total" value="<%= product.price %>">
-                <p id="total" class="m-0 DetailsPrice" "><strong>Total:</strong> <i>&#8369; <%= product.price %></i></p>
-                <input type="button" class="btn  DetailsAddCartBut" value="Add Card">
+                <p id="total" class="m-0 DetailsPrice" "><strong>Total:</strong> <i>&#x24; <%= product.price %></i></p>
+                <input type="button" class="btn  DetailsAddCartBut" value="Add to Cart">
                 <input type="submit" class="btn  DetailsBuyBut" value="Buy Now">
             </div>
         </form>
